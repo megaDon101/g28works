@@ -203,6 +203,13 @@ export default function Home() {
               <div className={styles.resultsHeader}>
                 <div className={styles.resultsTitle}>RECOMMENDATIONS</div>
                 <div className={styles.resultsSummary}>{result.summary}</div>
+                <div className={styles.mdAttribution}>
+                  <span className={styles.mdAttrLabel}>GRADE DATA</span>
+                  <a href="https://www.machiningdoctor.com/charts/carbide-grades-chart/" target="_blank" rel="noopener noreferrer" className={styles.mdAttrLink}>
+                    <span className={styles.mdAttrLogo}>⚕</span>
+                    <span>MachiningDoctor.com</span>
+                  </a>
+                </div>
               </div>
 
               {result.warnings?.length > 0 && (
@@ -261,9 +268,14 @@ export default function Home() {
                             <span className={styles.recDataValue}>{rec.limitation}</span>
                           </div>
                         </div>
-                        <a href={mscUrl(rec.mscSearch)} target="_blank" rel="noopener noreferrer" className={styles.mscBtn}>
-                          🛒 Find on MSC Industrial →
-                        </a>
+                        <div className={styles.recActions}>
+                          <a href={mscUrl(rec.mscSearch)} target="_blank" rel="noopener noreferrer" className={styles.mscBtn}>
+                            🛒 Find on MSC Industrial →
+                          </a>
+                          <a href={`https://www.machiningdoctor.com/grades/gradeinfo/?grade=${encodeURIComponent(rec.grade)}`} target="_blank" rel="noopener noreferrer" className={styles.mdBtn}>
+                            ⚕ Grade Data on MachiningDoctor →
+                          </a>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -271,7 +283,7 @@ export default function Home() {
               </div>
 
               <div className={styles.disclaimer}>
-                Recommendations are AI-generated based on general machining knowledge. Always verify speeds, feeds and tooling specifications with manufacturer data sheets before production use. G28 Works is not liable for tooling decisions made based on these suggestions.
+                Recommendations are AI-generated based on general machining knowledge. Grade data referenced from <a href="https://www.machiningdoctor.com" target="_blank" rel="noopener noreferrer" style={{color:'var(--g28-yellow)'}}>MachiningDoctor.com</a>. Always verify speeds, feeds and tooling specifications with manufacturer data sheets before production use. G28 Works is not liable for tooling decisions made based on these suggestions.
               </div>
             </div>
           )}
