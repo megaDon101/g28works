@@ -400,6 +400,42 @@
   line-height: 1.4;
 }
 
+.mdAttribution {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--g28-border);
+}
+.mdAttrLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--g28-muted);
+  letter-spacing: 2px;
+}
+.mdAttrLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--g28-yellow);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  transition: opacity 0.15s;
+}
+.mdAttrLink:hover { opacity: 0.8; }
+.mdAttrLogo {
+  font-size: 14px;
+}
+
+.recActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .mscBtn {
   display: inline-flex;
   align-items: center;
@@ -415,8 +451,27 @@
   border-radius: 3px;
   transition: background 0.15s;
 }
-.mscBtn:hover {
-  background: rgba(245,197,24,0.1);
+.mscBtn:hover { background: rgba(245,197,24,0.1); }
+
+.mdBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  background: transparent;
+  border: 1px solid var(--g28-border2);
+  color: var(--g28-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+.mdBtn:hover {
+  border-color: var(--g28-yellow);
+  color: var(--g28-yellow);
+  background: rgba(245,197,24,0.05);
 }
 
 .disclaimer {
