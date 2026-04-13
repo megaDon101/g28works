@@ -5,6 +5,11 @@ export async function POST(req: NextRequest) {
     const body = await req.json()
     const { operation, material, hardness, machine, rpm, sfm, doc, woc, holder, priority, notes } = body
 
+    const apiKey = process.env.ANTHROPIC_API_KEY
+    if (!apiKey) {
+      return NextResponse.json({ error: 'API key not configured' }, { status: 500 })
+    }
+
     const prompt = `You are an expert CNC tooling advisor with deep knowledge of cutting tools from all major manufacturers including Sandvik Coromant, Kennametal, Iscar, Seco Tools, Walter Tools, Mitsubishi Materials, Kyocera, and Sumitomo.
 
 A machinist needs tooling recommendations for the following situation:
@@ -58,18 +63,31 @@ Respond in valid JSON format only, no markdown, no explanation outside the JSON.
 
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01'
+      },
       body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-haiku-4-5-20251001',
         max_tokens: 2000,
         messages: [{ role: 'user', content: prompt }]
       })
     })
 
+    if (!response.ok) {
+      const errText = await response.text()
+      console.error('Anthropic API error:', response.status, errText)
+      return NextResponse.json({ error: `API error: ${response.status}` }, { status: 500 })
+    }
+
     const data = await response.json()
     const text = data.content?.[0]?.text || ''
 
-    // Parse JSON from response
+    if (!text) {
+      return NextResponse.json({ error: 'Empty response from AI' }, { status: 500 })
+    }
+
     const clean = text.replace(/```json|```/g, '').trim()
     const parsed = JSON.parse(clean)
 
