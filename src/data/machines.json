@@ -2,8 +2,6 @@
   "version": "1.0",
   "last_updated": "2026-04-13",
   "machines": [
-
-    // ===================== HAAS =====================
     {
       "id": "haas-vf-2",
       "make": "Haas",
@@ -18,7 +16,11 @@
       "travel_z_in": 20,
       "rapid_ipm": 710,
       "atc_capacity": 20,
-      "search_terms": ["vf2", "vf-2", "haas vf2"]
+      "search_terms": [
+        "vf2",
+        "vf-2",
+        "haas vf2"
+      ]
     },
     {
       "id": "haas-vf-2ss",
@@ -34,7 +36,12 @@
       "travel_z_in": 20,
       "rapid_ipm": 1400,
       "atc_capacity": 30,
-      "search_terms": ["vf2ss", "vf-2ss", "haas super speed", "vf2 ss"]
+      "search_terms": [
+        "vf2ss",
+        "vf-2ss",
+        "haas super speed",
+        "vf2 ss"
+      ]
     },
     {
       "id": "haas-vf-3",
@@ -50,7 +57,11 @@
       "travel_z_in": 25,
       "rapid_ipm": 1000,
       "atc_capacity": 24,
-      "search_terms": ["vf3", "vf-3", "haas vf3"]
+      "search_terms": [
+        "vf3",
+        "vf-3",
+        "haas vf3"
+      ]
     },
     {
       "id": "haas-vf-4",
@@ -66,7 +77,11 @@
       "travel_z_in": 25,
       "rapid_ipm": 1000,
       "atc_capacity": 24,
-      "search_terms": ["vf4", "vf-4", "haas vf4"]
+      "search_terms": [
+        "vf4",
+        "vf-4",
+        "haas vf4"
+      ]
     },
     {
       "id": "haas-minimill",
@@ -82,7 +97,11 @@
       "travel_z_in": 14,
       "rapid_ipm": 600,
       "atc_capacity": 10,
-      "search_terms": ["mini mill", "minimill", "haas mini"]
+      "search_terms": [
+        "mini mill",
+        "minimill",
+        "haas mini"
+      ]
     },
     {
       "id": "haas-umc-750",
@@ -98,7 +117,12 @@
       "travel_z_in": 20,
       "rapid_ipm": 1000,
       "atc_capacity": 40,
-      "search_terms": ["umc750", "umc-750", "haas 5 axis", "haas umc"]
+      "search_terms": [
+        "umc750",
+        "umc-750",
+        "haas 5 axis",
+        "haas umc"
+      ]
     },
     {
       "id": "haas-st-20",
@@ -113,7 +137,12 @@
       "max_turning_dia_in": 14.5,
       "max_turning_length_in": 20,
       "atc_capacity": 12,
-      "search_terms": ["st20", "st-20", "haas lathe", "haas turning"]
+      "search_terms": [
+        "st20",
+        "st-20",
+        "haas lathe",
+        "haas turning"
+      ]
     },
     {
       "id": "haas-st-30",
@@ -128,7 +157,11 @@
       "max_turning_dia_in": 19,
       "max_turning_length_in": 24,
       "atc_capacity": 12,
-      "search_terms": ["st30", "st-30", "haas st30"]
+      "search_terms": [
+        "st30",
+        "st-30",
+        "haas st30"
+      ]
     },
     {
       "id": "haas-ec-400",
@@ -144,10 +177,13 @@
       "travel_z_in": 20,
       "rapid_ipm": 1200,
       "atc_capacity": 60,
-      "search_terms": ["ec400", "ec-400", "haas horizontal", "haas hmc"]
+      "search_terms": [
+        "ec400",
+        "ec-400",
+        "haas horizontal",
+        "haas hmc"
+      ]
     },
-
-    // ===================== MAZAK =====================
     {
       "id": "mazak-vcn-430",
       "make": "Mazak",
@@ -162,7 +198,11 @@
       "travel_z_in": 20,
       "rapid_ipm": 1654,
       "atc_capacity": 30,
-      "search_terms": ["vcn430", "vcn-430", "mazak vcn430"]
+      "search_terms": [
+        "vcn430",
+        "vcn-430",
+        "mazak vcn430"
+      ]
     },
     {
       "id": "mazak-vcn-530",
@@ -178,7 +218,12 @@
       "travel_z_in": 20.1,
       "rapid_ipm": 1654,
       "atc_capacity": 30,
-      "search_terms": ["vcn530", "vcn-530", "vcn530c", "mazak vcn"]
+      "search_terms": [
+        "vcn530",
+        "vcn-530",
+        "vcn530c",
+        "mazak vcn"
+      ]
     },
     {
       "id": "mazak-integrex-i200",
@@ -193,7 +238,11 @@
       "max_turning_dia_in": 25.6,
       "max_turning_length_in": 36,
       "atc_capacity": 36,
-      "search_terms": ["integrex i200", "integrex i-200", "mazak integrex"]
+      "search_terms": [
+        "integrex i200",
+        "integrex i-200",
+        "mazak integrex"
+      ]
     },
     {
       "id": "mazak-qt-250",
@@ -208,7 +257,12 @@
       "max_turning_dia_in": 14.1,
       "max_turning_length_in": 21.6,
       "atc_capacity": 12,
-      "search_terms": ["qt250", "quick turn 250", "mazak qt", "mazak lathe"]
+      "search_terms": [
+        "qt250",
+        "quick turn 250",
+        "mazak qt",
+        "mazak lathe"
+      ]
     },
     {
       "id": "mazak-hcn-5000",
@@ -224,10 +278,13 @@
       "travel_z_in": 32,
       "rapid_ipm": 2362,
       "atc_capacity": 60,
-      "search_terms": ["hcn5000", "hcn-5000", "mazak horizontal", "mazak hmc"]
+      "search_terms": [
+        "hcn5000",
+        "hcn-5000",
+        "mazak horizontal",
+        "mazak hmc"
+      ]
     },
-
-    // ===================== DMG MORI =====================
     {
       "id": "dmg-cmx600v",
       "make": "DMG Mori",
@@ -245,7 +302,12 @@
       "travel_z_in": 17.7,
       "rapid_mmpm": 36000,
       "atc_capacity": 16,
-      "search_terms": ["cmx600", "cmx 600", "cmx600v", "dmg cmx"]
+      "search_terms": [
+        "cmx600",
+        "cmx 600",
+        "cmx600v",
+        "dmg cmx"
+      ]
     },
     {
       "id": "dmg-cmx1100v",
@@ -264,7 +326,11 @@
       "travel_z_in": 20,
       "rapid_mmpm": 36000,
       "atc_capacity": 24,
-      "search_terms": ["cmx1100", "cmx 1100", "cmx1100v"]
+      "search_terms": [
+        "cmx1100",
+        "cmx 1100",
+        "cmx1100v"
+      ]
     },
     {
       "id": "dmg-nvx5080",
@@ -283,7 +349,11 @@
       "travel_z_in": 20,
       "rapid_mmpm": 30000,
       "atc_capacity": 30,
-      "search_terms": ["nvx5080", "nvx 5080", "dmg nvx"]
+      "search_terms": [
+        "nvx5080",
+        "nvx 5080",
+        "dmg nvx"
+      ]
     },
     {
       "id": "dmg-nlx2500",
@@ -298,7 +368,12 @@
       "max_turning_dia_mm": 366,
       "max_turning_length_mm": 700,
       "atc_capacity": 12,
-      "search_terms": ["nlx2500", "nlx 2500", "dmg nlx", "dmg mori lathe"]
+      "search_terms": [
+        "nlx2500",
+        "nlx 2500",
+        "dmg nlx",
+        "dmg mori lathe"
+      ]
     },
     {
       "id": "dmg-dmu50",
@@ -317,7 +392,12 @@
       "travel_z_in": 15.7,
       "rapid_mmpm": 30000,
       "atc_capacity": 30,
-      "search_terms": ["dmu50", "dmu 50", "dmg 5 axis", "dmu50 3rd gen"]
+      "search_terms": [
+        "dmu50",
+        "dmu 50",
+        "dmg 5 axis",
+        "dmu50 3rd gen"
+      ]
     },
     {
       "id": "dmg-nhx5000",
@@ -333,10 +413,13 @@
       "travel_z_mm": 800,
       "rapid_mmpm": 60000,
       "atc_capacity": 60,
-      "search_terms": ["nhx5000", "nhx 5000", "dmg horizontal", "dmg nhx"]
+      "search_terms": [
+        "nhx5000",
+        "nhx 5000",
+        "dmg horizontal",
+        "dmg nhx"
+      ]
     },
-
-    // ===================== OKUMA =====================
     {
       "id": "okuma-genos-m560v",
       "make": "Okuma",
@@ -351,7 +434,12 @@
       "travel_z_in": 20,
       "rapid_ipm": 1890,
       "atc_capacity": 24,
-      "search_terms": ["genos m560", "m560v", "okuma genos", "okuma vmc"]
+      "search_terms": [
+        "genos m560",
+        "m560v",
+        "okuma genos",
+        "okuma vmc"
+      ]
     },
     {
       "id": "okuma-mb56v",
@@ -367,7 +455,11 @@
       "travel_z_in": 22,
       "rapid_ipm": 1575,
       "atc_capacity": 40,
-      "search_terms": ["mb56v", "mb-56v", "okuma mb56"]
+      "search_terms": [
+        "mb56v",
+        "mb-56v",
+        "okuma mb56"
+      ]
     },
     {
       "id": "okuma-genos-l3000",
@@ -382,7 +474,12 @@
       "max_turning_dia_in": 20.5,
       "max_turning_length_in": 40,
       "atc_capacity": 12,
-      "search_terms": ["genos l3000", "l3000", "okuma genos lathe", "okuma lathe"]
+      "search_terms": [
+        "genos l3000",
+        "l3000",
+        "okuma genos lathe",
+        "okuma lathe"
+      ]
     },
     {
       "id": "okuma-multus-b400",
@@ -397,7 +494,11 @@
       "max_turning_dia_in": 26,
       "max_turning_length_in": 60,
       "atc_capacity": 40,
-      "search_terms": ["multus b400", "okuma multus", "multus b"]
+      "search_terms": [
+        "multus b400",
+        "okuma multus",
+        "multus b"
+      ]
     },
     {
       "id": "okuma-mu500v",
@@ -413,10 +514,13 @@
       "travel_z_in": 17.7,
       "rapid_ipm": 1969,
       "atc_capacity": 32,
-      "search_terms": ["mu500v", "mu-500v", "okuma 5 axis", "okuma mu"]
+      "search_terms": [
+        "mu500v",
+        "mu-500v",
+        "okuma 5 axis",
+        "okuma mu"
+      ]
     },
-
-    // ===================== DN SOLUTIONS (DOOSAN) =====================
     {
       "id": "dn-dnm5700",
       "make": "DN Solutions",
@@ -431,7 +535,12 @@
       "travel_z_in": 22,
       "rapid_ipm": 1417,
       "atc_capacity": 30,
-      "search_terms": ["dnm5700", "dnm 5700", "doosan dnm", "dn solutions vmc"]
+      "search_terms": [
+        "dnm5700",
+        "dnm 5700",
+        "doosan dnm",
+        "dn solutions vmc"
+      ]
     },
     {
       "id": "dn-dnm4500",
@@ -447,7 +556,11 @@
       "travel_z_in": 20,
       "rapid_ipm": 1417,
       "atc_capacity": 30,
-      "search_terms": ["dnm4500", "dnm 4500", "doosan dnm4500"]
+      "search_terms": [
+        "dnm4500",
+        "dnm 4500",
+        "doosan dnm4500"
+      ]
     },
     {
       "id": "dn-puma2600",
@@ -462,7 +575,12 @@
       "max_turning_dia_in": 16.9,
       "max_turning_length_in": 24,
       "atc_capacity": 12,
-      "search_terms": ["puma2600", "puma 2600", "doosan puma", "dn puma"]
+      "search_terms": [
+        "puma2600",
+        "puma 2600",
+        "doosan puma",
+        "dn puma"
+      ]
     },
     {
       "id": "dn-dvf5000",
@@ -478,14 +596,17 @@
       "travel_z_in": 17.7,
       "rapid_ipm": 1575,
       "atc_capacity": 30,
-      "search_terms": ["dvf5000", "dvf 5000", "doosan 5 axis", "dn dvf"]
+      "search_terms": [
+        "dvf5000",
+        "dvf 5000",
+        "doosan 5 axis",
+        "dn dvf"
+      ]
     },
-
-    // ===================== FANUC =====================
     {
       "id": "fanuc-robodrill-d21",
       "make": "Fanuc",
-      "model": "RoboDrill α-D21SiB",
+      "model": "RoboDrill \u03b1-D21SiB",
       "category": "VMC",
       "control": "Fanuc 31i-B5",
       "spindle_taper": "BT30",
@@ -496,12 +617,18 @@
       "travel_z_in": 13,
       "rapid_ipm": 2362,
       "atc_capacity": 21,
-      "search_terms": ["robodrill", "robo drill", "fanuc robodrill", "d21sib", "alpha d21"]
+      "search_terms": [
+        "robodrill",
+        "robo drill",
+        "fanuc robodrill",
+        "d21sib",
+        "alpha d21"
+      ]
     },
     {
       "id": "fanuc-robodrill-d14",
       "make": "Fanuc",
-      "model": "RoboDrill α-D14SiB",
+      "model": "RoboDrill \u03b1-D14SiB",
       "category": "VMC",
       "control": "Fanuc 31i-B5",
       "spindle_taper": "BT30",
@@ -512,10 +639,12 @@
       "travel_z_in": 13,
       "rapid_ipm": 2362,
       "atc_capacity": 21,
-      "search_terms": ["robodrill d14", "alpha d14", "fanuc d14"]
+      "search_terms": [
+        "robodrill d14",
+        "alpha d14",
+        "fanuc d14"
+      ]
     },
-
-    // ===================== MAKINO =====================
     {
       "id": "makino-a61nx",
       "make": "Makino",
@@ -530,7 +659,11 @@
       "travel_z_in": 31.5,
       "rapid_ipm": 2165,
       "atc_capacity": 60,
-      "search_terms": ["a61nx", "makino a61", "makino horizontal"]
+      "search_terms": [
+        "a61nx",
+        "makino a61",
+        "makino horizontal"
+      ]
     },
     {
       "id": "makino-v33i",
@@ -546,7 +679,11 @@
       "travel_z_in": 12.6,
       "rapid_ipm": 2362,
       "atc_capacity": 30,
-      "search_terms": ["v33i", "makino v33", "makino vmc"]
+      "search_terms": [
+        "v33i",
+        "makino v33",
+        "makino vmc"
+      ]
     },
     {
       "id": "makino-da300",
@@ -562,10 +699,12 @@
       "travel_z_in": 17.7,
       "rapid_ipm": 2362,
       "atc_capacity": 40,
-      "search_terms": ["da300", "makino da300", "makino 5 axis"]
+      "search_terms": [
+        "da300",
+        "makino da300",
+        "makino 5 axis"
+      ]
     },
-
-    // ===================== HURCO =====================
     {
       "id": "hurco-vmx30ti",
       "make": "Hurco",
@@ -580,10 +719,13 @@
       "travel_z_in": 20,
       "rapid_ipm": 1200,
       "atc_capacity": 24,
-      "search_terms": ["vmx30ti", "vmx30", "hurco vmx", "hurco vmc"]
+      "search_terms": [
+        "vmx30ti",
+        "vmx30",
+        "hurco vmx",
+        "hurco vmc"
+      ]
     },
-
-    // ===================== BROTHER =====================
     {
       "id": "brother-speedio-s700",
       "make": "Brother",
@@ -598,7 +740,12 @@
       "travel_z_in": 12.6,
       "rapid_ipm": 2362,
       "atc_capacity": 22,
-      "search_terms": ["speedio", "brother speedio", "s700", "brother tapping center"]
+      "search_terms": [
+        "speedio",
+        "brother speedio",
+        "s700",
+        "brother tapping center"
+      ]
     }
   ]
 }
