@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --g28-black: #080808;
+  --g28-dark: #111111;
+  --g28-panel: #161616;
+  --g28-border: #242424;
+  --g28-border2: #2e2e2e;
+  --g28-yellow: #f5c518;
+  --g28-yellow2: #ffd740;
+  --g28-red: #e53935;
+  --g28-green: #00e676;
+  --g28-blue: #2979ff;
+  --g28-text: #e0e0e0;
+  --g28-muted: #666;
+  --g28-muted2: #444;
+  --g28-white: #ffffff;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--g28-black);
+  color: var(--g28-text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--g28-dark); }
+::-webkit-scrollbar-thumb { background: var(--g28-border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--g28-muted); }
+
+/* Selection */
+::selection { background: rgba(245,197,24,0.2); color: var(--g28-yellow); }
